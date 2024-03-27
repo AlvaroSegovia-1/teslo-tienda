@@ -2,7 +2,7 @@ import { QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Link from "next/link";
 import Image from "next/image";
-import {redirect} from 'next/navigation'
+import { redirect } from "next/navigation";
 
 const productsInCart = [
   initialData.products[0],
@@ -11,9 +11,7 @@ const productsInCart = [
 ];
 
 export default function a() {
-
-/* redirect('/empty') */
-
+  /* redirect('/empty') */
 
   return (
     <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
@@ -55,7 +53,7 @@ export default function a() {
 
           {/* Checkout - Resumen de compra */}
 
-          <div className="bg-white rounded-xl shadow-xl p-7">
+          <div className="absolute top-20 right-10 bg-red-100 border border-gray-300 rounded-xl shadow-2xl p-7 h-fit">
             <h2 className="text-2xl mb-2">Resumen de orden de compra</h2>
             <div className="grid grid-cols-2">
               <span>No. Productos</span>
